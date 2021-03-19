@@ -2,7 +2,8 @@
 //To do: allow input of city and return current temperature. autocomplete city for input. ask for 
 //weather throughout day or single value for each day of week. include weather description with each value...
 //ex. 45C(sunny).....12C(rainy)
-
+//choose a date and desired weather. update user if desired weather is not expected at any point.
+//ex. 'looks like its going to rain on friday...saturday looks clear though'
 
 const tinput = require('prompt-sync')({sigint: true});
 let tempF = tinput('What is the temperature in Fahrenheit?');
