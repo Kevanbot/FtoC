@@ -4,18 +4,18 @@ let tempFnum = Number(tempF);
 if (typeof tempFnum === 'number' && isNaN(tempFnum) == false) {
     let tempC:number = (tempFnum - 32)*5/9;
     if (tempC >40){
-        console.log(`It's ${tempC} degrees Celsius out. Wow thats Hot!`)
+        console.log(`It's ${tempC} degrees Celsius out. Wow thats Hot! Damn Hot! Oof! das a hot one!`)
     }
     else {
-        console.log(`It's ${tempC} degrees Celsius out. Wow thats cold!`)
+        console.log(`It's ${tempC} degrees Celsius out. Wow thats cold! Your nips must be razorsharp!`)
     }
 }
 else {
     while (isNaN(tempFnum)) {
-    const tempFerror = tinput('what is the temp in F? Thats not a number you ignoramous!');
+    var tempFerror = tinput(`what is the temp in Fahrenheit!?! "${tempF}" is not a number you ignoramous!`);
     tempFnum = Number(tempFerror);}
     let tempCerror:number = (tempFnum - 32)*5/9;
-        if (tempCerror >40){
+        if (tempCerror >32){
         console.log(`It's ${tempCerror} degrees Celsius out. Wow thats Hot!`)
         }
         else {
@@ -23,7 +23,7 @@ else {
         }
     }
 
-
+//.toString()
 
 
 
