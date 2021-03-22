@@ -9,7 +9,7 @@ const tinput = require('prompt-sync')({sigint: true});
 let tempF = tinput('What is the temperature in Fahrenheit?');
 let tempFnum = Number(tempF);
 if (typeof tempFnum === 'number' && isNaN(tempFnum) == false) {
-    let tempC:number = (tempFnum - 32)*5/9;
+    let tempC:number = Math.round((tempFnum - 32)*5/9);
     if (tempC >28 && tempC < 70){
         console.log(`It's ${tempC} degrees Celsius out. Sounds Hot!`)
     }
